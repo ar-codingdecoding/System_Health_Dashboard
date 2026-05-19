@@ -18,7 +18,7 @@ public class DatabaseConfig {
             // file.
             config.setJdbcUrl("jdbc:mysql://localhost:3306/health_dash?useSSL=false&serverTimezone=UTC");
             config.setUsername("root");
-            config.setPassword("122057@Ar"); // Default to empty for local testing, change as needed.
+            config.setPassword("yourpassword"); // Default to empty for local testing, change as needed.
 
             config.setMaximumPoolSize(10);
             config.setMinimumIdle(2);
