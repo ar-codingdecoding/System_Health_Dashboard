@@ -1,0 +1,16 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+log/
+logs/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
+
+# DB credentials (optional, but good practice if you have secrets)
+# We won't ignore DatabaseConfig.java here because it's part of the source,
+# but in a real app, you'd ignore the properties file holding the passwords.

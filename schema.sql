@@ -1,0 +1,19 @@
+CREATE DATABASE IF NOT EXISTS health_dash;
+USE health_dash;
+
+CREATE TABLE IF NOT EXISTS system_metrics (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    cpu_usage DOUBLE NOT NULL,
+    memory_usage DOUBLE NOT NULL,
+    disk_usage DOUBLE NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS system_alerts (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    metric_type VARCHAR(50) NOT NULL,
+    threshold DOUBLE NOT NULL,
+    actual_value DOUBLE NOT NULL,
+    message TEXT NOT NULL
+);
